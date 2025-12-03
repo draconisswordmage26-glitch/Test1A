@@ -1,0 +1,36 @@
+// data/baseClasses/archivist.ts
+import { BaseClass } from "../../types";
+
+export const archivist: BaseClass = {
+    name: "Archivist",
+    hitDie: 6,
+    skillPoints: 4,
+    classSkills: ["Concentration", "Craft", "Decipher Script", "Heal", "Knowledge (all)", "Profession", "Spellcraft"],
+    bab: 'poor',
+    saves: { fort: 'poor', ref: 'poor', will: 'good' },
+    primaryAbility: 'int',
+    role: 'divine',
+    casterProgression: 'full',
+    classFeatures: [
+        { level: 1, name: "Scribe Scroll", description: "Gains Scribe Scroll as a bonus feat." },
+        { level: 1, name: "Dark Knowledge (Tactics)", description: "Use Knowledge checks to grant allies +1 to hit and damage against a creature type." },
+        { level: 2, name: "Lore Mastery", description: "Can take 10 on Decipher Script and Knowledge checks." },
+        { level: 3, name: "Dark Knowledge (Puissance)", description: "Can grant allies +1 bonus on damage rolls. Bonus increases at higher levels." },
+        { level: 4, name: "Still Mind", description: "+2 bonus on saves against spells and effects from the school of enchantment." },
+        { level: 5, name: "Bonus Feat", description: "Gains any one feat from the list of archivist bonus feats (e.g., metamagic feats)." },
+        { level: 6, name: "Dark Knowledge (Foes)", description: "Can identify a creature's special attacks and qualities." },
+        { level: 9, name: "Dark Knowledge (Weaknesses)", description: "Can identify a creature's weaknesses and vulnerabilities." },
+        { level: 10, name: "Bonus Feat", description: "Gains a bonus feat." },
+        { level: 12, "name": "Dark Knowledge (Resistance)", "description": "Can identify a creature's DR or energy resistance." },
+        { level: 15, name: "Bonus Feat", description: "Gains a bonus feat." },
+        { level: 18, "name": "Dark Knowledge (Perfection)", "description": "Can identify a creature's spell resistance." },
+        { level: 20, name: "Bonus Feat", description: "Gains a bonus feat." },
+        { level: 22, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+        { level: 25, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+        { level: 28, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+        { level: 31, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+        { level: 34, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+        { level: 37, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+        { level: 40, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+    ],
+};

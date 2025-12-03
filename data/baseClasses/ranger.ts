@@ -1,0 +1,40 @@
+// data/baseClasses/ranger.ts
+import { BaseClass } from "../../types";
+
+export const ranger: BaseClass = {
+    name: "Ranger",
+    hitDie: 8,
+    skillPoints: 6,
+    classSkills: ["Climb", "Concentration", "Craft", "Handle Animal", "Heal", "Hide", "Jump", "Knowledge (dungeoneering)", "Knowledge (geography)", "Knowledge (nature)", "Listen", "Move Silently", "Profession", "Ride", "Search", "Spot", "Survival", "Swim", "Use Rope"],
+    bab: 'good' as const,
+    saves: { fort: 'good' as const, ref: 'good' as const, will: 'poor' as const },
+    role: 'ranged',
+    casterType: 'divine',
+    casterProgression: 'half',
+    primaryAbility: 'dex',
+    classFeatures: [
+        { level: 1, name: "Favored Enemy", description: "Select a type of creature to gain a +2 bonus on Bluff, Listen, Sense Motive, Spot, and Survival checks and damage rolls against them." },
+        { level: 1, name: "Track", description: "Gains Track as a bonus feat." },
+        { level: 2, name: "Combat Style", description: "Choose Archery or Two-Weapon Combat and gain a bonus feat from that style." },
+        { level: 3, name: "Endurance", description: "Gains Endurance as a bonus feat." },
+        { level: 4, name: "Animal Companion", description: "Gains an animal companion." },
+        { level: 5, name: "Favored Enemy", description: "Select another favored enemy, and bonus increases." },
+        { level: 6, name: "Improved Combat Style", description: "Gain a second bonus feat from chosen style." },
+        { level: 7, name: "Woodland Stride", description: "Move through natural thorns and undergrowth at normal speed." },
+        { level: 8, name: "Swift Tracker", description: "Can track while moving at normal speed." },
+        { level: 9, name: "Evasion", description: "Take no damage on successful Reflex saves." },
+        { level: 10, name: "Favored Enemy", description: "Select another favored enemy, and bonus increases." },
+        { level: 11, name: "Combat Style Mastery", description: "Gain a third bonus feat from chosen style." },
+        { level: 13, name: "Camouflage", description: "Can use the Hide skill in any sort of natural terrain." },
+        { level: 15, name: "Favored Enemy", description: "Select another favored enemy, and bonus increases." },
+        { level: 17, name: "Hide in Plain Sight", description: "Can use the Hide skill in natural terrain even while being observed." },
+        { level: 20, name: "Favored Enemy", description: "Select another favored enemy, and bonus increases." },
+        { level: 21, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+        { level: 24, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+        { level: 27, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+        { level: 30, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+        { level: 33, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+        { level: 36, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+        { level: 39, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+    ]
+};

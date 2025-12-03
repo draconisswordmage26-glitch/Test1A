@@ -1,0 +1,43 @@
+// data/baseClasses/rogue.ts
+import { BaseClass } from "../../types";
+
+export const rogue: BaseClass = {
+    name: "Rogue",
+    hitDie: 6,
+    skillPoints: 8,
+    classSkills: ["Appraise", "Balance", "Bluff", "Climb", "Craft", "Decipher Script", "Diplomacy", "Disable Device", "Disguise", "Escape Artist", "Forgery", "Gather Information", "Hide", "Intimidate", "Jump", "Knowledge (local)", "Listen", "Move Silently", "Open Lock", "Perform", "Profession", "Search", "Sense Motive", "Sleight of Hand", "Spot", "Swim", "Tumble", "Use Magic Device", "Use Rope"],
+    bab: 'average' as const,
+    saves: { fort: 'poor' as const, ref: 'good' as const, will: 'poor' as const },
+    classFeatures: [
+        { level: 1, name: "Sneak Attack", description: "Gains +1d6 sneak attack damage." },
+        { level: 1, name: "Trapfinding", description: "Can find and disarm traps with a DC higher than 20." },
+        { level: 2, name: "Evasion", description: "Takes no damage on a successful Reflex save for half damage." },
+        { level: 3, name: "Sneak Attack", description: "Sneak attack damage increases to +2d6." },
+        { level: 3, name: "Trap Sense", description: "+1 bonus on Reflex saves against traps and a +1 dodge bonus to AC against attacks made by traps." },
+        { level: 4, name: "Uncanny Dodge", description: "Retains Dex bonus to AC when flat-footed." },
+        { level: 5, name: "Sneak Attack", description: "Sneak attack damage increases to +3d6." },
+        { level: 6, name: "Trap Sense", description: "Bonus increases to +2." },
+        { level: 7, name: "Sneak Attack", description: "Sneak attack damage increases to +4d6." },
+        { level: 8, name: "Improved Uncanny Dodge", description: "Can no longer be flanked." },
+        { level: 9, name: "Sneak Attack", description: "Sneak attack damage increases to +5d6." },
+        { level: 9, name: "Trap Sense", description: "Bonus increases to +3." },
+        { level: 10, name: "Special Ability", description: "Gains a special ability (e.g., Crippling Strike, Defensive Roll)." },
+        { level: 11, name: "Sneak Attack", description: "Sneak attack damage increases to +6d6." },
+        { level: 12, name: "Trap Sense", description: "Bonus increases to +4." },
+        { level: 13, name: "Special Ability", description: "Gains a special ability." },
+        { level: 13, name: "Sneak Attack", description: "Sneak attack damage increases to +7d6." },
+        { level: 15, name: "Sneak Attack", description: "Sneak attack damage increases to +8d6." },
+        { level: 15, name: "Trap Sense", description: "Bonus increases to +5." },
+        { level: 16, name: "Special Ability", description: "Gains a special ability." },
+        { level: 17, name: "Sneak Attack", description: "Sneak attack damage increases to +9d6." },
+        { level: 18, name: "Trap Sense", description: "Bonus increases to +6." },
+        { level: 19, name: "Special Ability", description: "Gains a special ability." },
+        { level: 19, name: "Sneak Attack", description: "Sneak attack damage increases to +10d6." },
+        { level: 23, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+        { level: 26, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+        { level: 29, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+        { level: 32, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+        { level: 35, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+        { level: 38, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+    ]
+};

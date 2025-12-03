@@ -1,0 +1,42 @@
+// data/baseClasses/druid.ts
+import { BaseClass } from "../../types";
+
+export const druid: BaseClass = {
+    name: "Druid",
+    hitDie: 8,
+    skillPoints: 4,
+    classSkills: ["Concentration", "Craft", "Diplomacy", "Handle Animal", "Heal", "Knowledge (nature)", "Listen", "Profession", "Ride", "Spellcraft", "Spot", "Survival", "Swim"],
+    bab: 'average' as const,
+    saves: { fort: 'good' as const, ref: 'poor' as const, will: 'good' as const },
+    role: 'divine',
+    casterProgression: 'full',
+    primaryAbility: 'wis',
+    classFeatures: [
+        { level: 1, name: "Animal Companion", description: "A druid begins play with an animal companion." },
+        { level: 1, name: "Nature Sense", description: "Gains a +2 bonus on Knowledge (nature) and Survival checks." },
+        { level: 2, name: "Woodland Stride", description: "Move through natural thorns and undergrowth at normal speed." },
+        { level: 3, name: "Trackless Step", description: "Leaves no trail in natural surroundings." },
+        { level: 4, name: "Resist Nature's Lure", description: "Gains a +4 bonus on saving throws against the spell-like abilities of fey." },
+        { level: 5, name: "Wild Shape", description: "Can turn into a Small or Medium animal 1/day." },
+        { level: 6, name: "Wild Shape", description: "Can use Wild Shape 2/day. Can turn into a Large animal." },
+        { level: 7, name: "Wild Shape", description: "Can use Wild Shape 3/day. Can turn into a Tiny animal." },
+        { level: 8, name: "Wild Shape", description: "Can use Wild Shape 4/day. Can turn into a Huge animal." },
+        { level: 9, name: "Venom Immunity", description: "Immune to all poisons." },
+        { level: 10, name: "Wild Shape", description: "Can use Wild Shape 5/day." },
+        { level: 11, name: "Thousand Faces", description: "Can change her appearance at will, as if using the 'disguise self' spell." },
+        { level: 12, name: "Wild Shape (Plant)", description: "Can use Wild Shape to change into a plant creature." },
+        { level: 13, name: "Timeless Body", description: "No longer takes ability score penalties for aging." },
+        { level: 14, name: "Wild Shape", description: "Can use Wild Shape 6/day." },
+        { level: 15, name: "Timeless Body", description: "Immunity to fatigue and exhaustion." },
+        { level: 16, name: "Wild Shape (Elemental)", description: "Can use Wild Shape to change into an elemental." },
+        { level: 18, name: "Wild Shape", description: "Can use Wild Shape 7/day." },
+        { level: 20, name: "Wild Shape (Huge Elemental)", description: "Can use Wild Shape to become a Huge elemental." },
+        { level: 22, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+        { level: 25, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+        { level: 28, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+        { level: 31, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+        { level: 34, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+        { level: 37, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+        { level: 40, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+    ]
+};

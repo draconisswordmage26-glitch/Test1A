@@ -1,0 +1,43 @@
+// data/baseClasses/monk.ts
+import { BaseClass } from "../../types";
+
+export const monk: BaseClass = {
+    name: "Monk",
+    hitDie: 8,
+    skillPoints: 4,
+    classSkills: ["Balance", "Climb", "Concentration", "Craft", "Diplomacy", "Escape Artist", "Hide", "Jump", "Knowledge (arcana)", "Knowledge (religion)", "Listen", "Move Silently", "Perform", "Profession", "Sense Motive", "Spot", "Tumble"],
+    bab: 'average' as const,
+    saves: { fort: 'good' as const, ref: 'good' as const, will: 'good' as const },
+    role: 'melee',
+    primaryAbility: 'wis',
+    classFeatures: [
+        { level: 1, name: "Flurry of Blows", description: "Can make an extra attack with a -2 penalty." },
+        { level: 1, name: "Unarmed Strike", description: "Deals 1d6 damage with unarmed attacks." },
+        { level: 1, name: "Bonus Feat", description: "Gains Improved Grapple or Stunning Fist as a bonus feat." },
+        { level: 2, name: "Bonus Feat", description: "Gains Combat Reflexes or Deflect Arrows as a bonus feat." },
+        { level: 2, name: "Evasion", description: "Takes no damage on a successful Reflex save." },
+        { level: 3, name: "Still Mind", description: "+2 bonus on saves against spells and effects from the school of enchantment." },
+        { level: 4, name: "Ki Strike (Magic)", description: "Unarmed strikes are treated as magic weapons." },
+        { level: 4, name: "Slow Fall", description: "Can use a wall to slow her fall (20 ft)." },
+        { level: 5, name: "Purity of Body", description: "Immunity to all diseases." },
+        { level: 6, name: "Bonus Feat", description: "Gains Improved Disarm or Improved Trip as a bonus feat." },
+        { level: 7, name: "Wholeness of Body", description: "Can heal her own wounds (2x level in hp/day)." },
+        { level: 9, name: "Improved Evasion", description: "Takes only half damage on a failed Reflex save." },
+        { level: 10, name: "Ki Strike (Lawful)", description: "Unarmed strikes are treated as lawful weapons." },
+        { level: 11, name: "Diamond Body", description: "Immunity to poisons of all kinds." },
+        { level: 12, name: "Abundant Step", description: "Can slip between spaces, as 'dimension door', once per day." },
+        { level: 13, name: "Diamond Soul", description: "Gains spell resistance equal to her monk level + 10." },
+        { level: 15, name: "Quivering Palm", description: "Can kill with a single touch (1/week)." },
+        { level: 16, name: "Ki Strike (Adamantine)", description: "Unarmed strikes can bypass DR as if they were adamantine." },
+        { level: 17, name: "Timeless Body", description: "No longer takes ability penalties for aging." },
+        { level: 19, name: "Empty Body", description: "Can become ethereal for 1 minute (1/day)." },
+        { level: 20, name: "Perfect Self", description: "Becomes a magical creature. DR 10/magic." },
+        { level: 22, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+        { level: 25, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+        { level: 28, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+        { level: 31, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+        { level: 34, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+        { level: 37, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+        { level: 40, name: "Bonus Feat", description: "Gains a bonus epic feat." },
+    ]
+};
