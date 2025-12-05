@@ -7,7 +7,7 @@ import { adityanAgathion } from './monsters/adityanAgathion';
 import { aelder } from './monsters/aelder';
 import { ammut } from './monsters/ammut';
 import { atropal } from './monsters/atropal';
-import { balor } from './monsters/balor';
+
 import { behemoth } from './monsters/behemoth';
 import { cornugon } from './monsters/cornugon';
 import { dreamLarva } from './monsters/dreamLarva';
@@ -23,7 +23,7 @@ import { nightwalker } from './monsters/nightwalker';
 import { norn } from './monsters/norn';
 import { oniMage } from './monsters/oniMage';
 import { phane } from './monsters/phane';
-import { pitFiend } from './monsters/pitFiend';
+
 import { planetar } from './monsters/planetar';
 import { pyroclasticDragon } from './monsters/pyroclasticDragon';
 import { rakshasaMaharaja } from './monsters/rakshasaMaharaja';
@@ -42,7 +42,7 @@ export const monsters: Monster[] = [
   aelder,
   ammut,
   atropal,
-  balor,
+
   behemoth,
   cornugon,
   dreamLarva,
@@ -58,7 +58,7 @@ export const monsters: Monster[] = [
   norn,
   oniMage,
   phane,
-  pitFiend,
+
   planetar,
   pyroclasticDragon,
   rakshasaMaharaja,

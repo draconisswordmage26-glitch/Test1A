@@ -6,7 +6,7 @@ import { adityanAgathion } from './adityanAgathion';
 import { aelder } from './aelder';
 import { ammut } from './ammut';
 import { atropal } from './atropal';
-import { balor } from './balor';
+
 import { behemoth } from './behemoth';
 import { cornugon } from './cornugon';
 import { dreamLarva } from './dreamLarva';
@@ -20,7 +20,7 @@ import { nightwalker } from './nightwalker';
 import { norn } from './norn';
 import { oniMage } from './oniMage';
 import { phane } from './phane';
-import { pitFiend } from './pitFiend';
+
 import { planetar } from './planetar';
 import { pyroclasticDragon } from './pyroclasticDragon';
 import { rakshasaMaharaja } from './rakshasaMaharaja';
@@ -38,7 +38,7 @@ export const baselineMonsters: BaselineMonster[] = [
   aelder,
   ammut,
   atropal,
-  balor,
+
   behemoth,
   cornugon,
   dreamLarva,
@@ -52,7 +52,7 @@ export const baselineMonsters: BaselineMonster[] = [
   norn,
   oniMage,
   phane,
-  pitFiend,
+
   planetar,
   pyroclasticDragon,
   rakshasaMaharaja,

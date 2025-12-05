@@ -5,7 +5,7 @@ import { adityanAgathionBuilds } from './adityanAgathion';
 import { aelderBuilds } from './aelder';
 import { ammutBuilds } from './ammut';
 import { atropalBuilds } from './atropal';
-import { balorBuilds } from './balor';
+
 import { behemothBuilds } from './behemoth';
 import { cornugonBuilds } from './cornugon';
 import { dreamLarvaBuilds } from './dreamLarva';
@@ -19,7 +19,7 @@ import { nightwalkerBuilds } from './nightwalker';
 import { nornBuilds } from './norn';
 import { oniMageBuilds } from './oniMage';
 import { phaneBuilds } from './phane';
-import { pitFiendBuilds } from './pitFiend';
+
 import { planetarBuilds } from './planetar';
 import { pyroclasticDragonBuilds } from './pyroclasticDragon';
 import { rakshasaMaharajaBuilds } from './rakshasaMaharaja';
@@ -38,7 +38,7 @@ export const sampleBuilds: MonsterSampleBuilds[] = [
   aelderBuilds,
   ammutBuilds,
   atropalBuilds,
-  balorBuilds,
+
   behemothBuilds,
   cornugonBuilds,
   dreamLarvaBuilds,
@@ -52,7 +52,7 @@ export const sampleBuilds: MonsterSampleBuilds[] = [
   nornBuilds,
   oniMageBuilds,
   phaneBuilds,
-  pitFiendBuilds,
+
   planetarBuilds,
   pyroclasticDragonBuilds,
   rakshasaMaharajaBuilds,

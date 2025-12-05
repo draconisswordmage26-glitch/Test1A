@@ -24,7 +24,7 @@ import { adityanAgathionTactics } from './monsterTactics/adityanAgathion';
 import { aelderTactics } from './monsterTactics/aelder';
 import { ammutTactics } from './monsterTactics/ammut';
 import { atropalTactics } from './monsterTactics/atropal';
-import { balorTactics } from './monsterTactics/balor';
+
 import { behemothTactics } from './monsterTactics/behemoth';
 import { cornugonTactics } from './monsterTactics/cornugon';
 import { dreamLarvaTactics } from './monsterTactics/dreamLarva';
@@ -38,7 +38,7 @@ import { nightwalkerTactics } from './monsterTactics/nightwalker';
 import { nornTactics } from './monsterTactics/norn';
 import { oniMageTactics } from './monsterTactics/oniMage';
 import { phaneTactics } from './monsterTactics/phane';
-import { pitFiendTactics } from './monsterTactics/pitFiend';
+
 import { planetarTactics } from './monsterTactics/planetar';
 import { pyroclasticDragonTactics } from './monsterTactics/pyroclasticDragon';
 import { rakshasaMaharajaTactics } from './monsterTactics/rakshasaMaharaja';
@@ -69,7 +69,7 @@ export const tactics: Tactics[] = [
   aelderTactics,
   ammutTactics,
   atropalTactics,
-  balorTactics,
+
   behemothTactics,
   cornugonTactics,
   dreamLarvaTactics,
@@ -83,7 +83,7 @@ export const tactics: Tactics[] = [
   nornTactics,
   oniMageTactics,
   phaneTactics,
-  pitFiendTactics,
+
   planetarTactics,
   pyroclasticDragonTactics,
   rakshasaMaharajaTactics,
