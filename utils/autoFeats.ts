@@ -13,7 +13,7 @@ export function getFeatSlots(build: CharacterBuild): FeatSlot[] {
 
     const featSlots: FeatSlot[] = [];
     const racialHd = parseInt(build.base.racialHitDice.split('d')[0], 10) || 0;
-    
+
     build.base.feats.forEach(featName => {
         featSlots.push({ level: 0, type: 'racial', source: build.base.name });
     });
@@ -26,12 +26,12 @@ export function getFeatSlots(build: CharacterBuild): FeatSlot[] {
             featSlots.push({ level: hd, type: 'normal', source: `HD ${hd}` });
         }
     }
-    
+
     let currentHd = racialHd;
     build.levels.forEach(l => {
         const classDef = l.class as BaseClass | PrestigeClass;
         const features = 'classFeatures' in classDef ? classDef.classFeatures : classDef.features;
-        for(let i = 1; i <= l.level; i++) {
+        for (let i = 1; i <= l.level; i++) {
             currentHd++;
             features.forEach(feature => {
                 if (feature.level === i && feature.name.toLowerCase().includes('bonus feat')) {
@@ -46,19 +46,31 @@ export function getFeatSlots(build: CharacterBuild): FeatSlot[] {
 
 const checkPrereqs = (feat: Feat, build: CharacterBuild, takenFeats: string[], currentLevel: number): boolean => {
     const p = feat.prerequisites;
-    
+
     const racialHd = parseInt(build.base.racialHitDice.split('d')[0], 10) || 0;
-    const classLevels = build.levels.reduce((sum, l) => sum + (l.level > (currentLevel - racialHd) ? (currentLevel - racialHd) : l.level) , 0);
-    if(feat.isEpic && (racialHd + classLevels) < 21) return false;
-    
+    const classLevels = build.levels.reduce((sum, l) => sum + (l.level > (currentLevel - racialHd) ? (currentLevel - racialHd) : l.level), 0);
+    if (feat.isEpic && (racialHd + classLevels) < 21) return false;
+
     if (!p) return true;
     const { bab, feats, abilityScores, skills, special } = p;
 
     let totalBab = 0;
-    if(racialHd > 0) {
-        totalBab += Math.floor(racialHd * 0.75); // Assuming average BAB for monsters
+    if (racialHd > 0) {
+        const type = build.base.sizeAndType.toLowerCase();
+        let multiplier = 0.75; // Default for Cleric-like/Avg BAB types (Aberration, Elemental, etc.)
+
+        // Full BAB Types
+        if (type.includes('outsider') || type.includes('dragon') || type.includes('magical beast') || type.includes('monstrous humanoid')) {
+            multiplier = 1.0;
+        }
+        // Poor BAB Types
+        else if (type.includes('undead') || type.includes('fey')) {
+            multiplier = 0.5;
+        }
+
+        totalBab += Math.floor(racialHd * multiplier);
     }
-     build.levels.forEach(l => {
+    build.levels.forEach(l => {
         const levelInClass = Math.min(l.level, Math.max(0, currentLevel - racialHd - build.levels.filter(cl => cl.class.name !== l.class.name).reduce((sum, cl) => sum + cl.level, 0)));
         const classDef = l.class;
         if (classDef.bab === 'good') totalBab += levelInClass;
@@ -73,17 +85,17 @@ const checkPrereqs = (feat: Feat, build: CharacterBuild, takenFeats: string[], c
             if (build.base.abilities[ability as AbilityName] < score!) return false;
         }
     }
-     if (skills) {
-      for (const [skill, ranks] of Object.entries(skills)) {
-        if ((build.allocatedSkills[skill] || 0) < ranks) return false;
-      }
+    if (skills) {
+        for (const [skill, ranks] of Object.entries(skills)) {
+            if ((build.allocatedSkills[skill] || 0) < ranks) return false;
+        }
     }
     if (special) {
-      const classFeatures = build.levels.flatMap(l => {
-        const features = 'classFeatures' in l.class ? l.class.classFeatures : l.class.features;
-        return features.filter(f => f.level <= l.level).map(f => f.name.toLowerCase());
-      });
-      if (!classFeatures.some(fName => fName.includes(special.toLowerCase()))) return false;
+        const classFeatures = build.levels.flatMap(l => {
+            const features = 'classFeatures' in l.class ? l.class.classFeatures : l.class.features;
+            return features.filter(f => f.level <= l.level).map(f => f.name.toLowerCase());
+        });
+        if (!classFeatures.some(fName => fName.includes(special.toLowerCase()))) return false;
     }
     return true;
 };
@@ -108,16 +120,16 @@ export function autoSelectFeats(build: CharacterBuild, slots: FeatSlot[], goalCl
         skill: ["Dodge", "Mobility", "Spring Attack", "Weapon Finesse"],
         ranged: ["Point Blank Shot", "Precise Shot", "Rapid Shot", "Manyshot", "Greater Manyshot"]
     };
-    
+
     const selected: { [key: string]: string } = {};
     const takenFeatNames: string[] = [...build.base.feats];
-    
+
     const requiredFeats: Set<string> = new Set();
     if (goalClass?.prerequisites?.feats) {
         goalClass.prerequisites.feats.forEach(f => {
             if (Array.isArray(f)) {
                 // For OR conditions, just add the first one. A smarter system could check which is "easiest" to get.
-                if(f.length > 0) requiredFeats.add(f[0]);
+                if (f.length > 0) requiredFeats.add(f[0]);
             } else {
                 requiredFeats.add(f);
             }
@@ -127,12 +139,12 @@ export function autoSelectFeats(build: CharacterBuild, slots: FeatSlot[], goalCl
     slots.forEach((slot, index) => {
         const key = `${slot.level}-${slot.source.replace(/\s+/g, '-')}-${index}`;
         const availableFeats = allFeats.filter(f => !takenFeatNames.includes(f.name) && checkPrereqs(f, build, takenFeatNames, slot.level));
-        
+
         let bestFeat: Feat | null = null;
-        
+
         // 1. Try to take a required feat
         const neededNow = Array.from(requiredFeats).filter(fName => !takenFeatNames.includes(fName));
-        for(const featName of neededNow) {
+        for (const featName of neededNow) {
             const feat = availableFeats.find(f => f.name === featName);
             if (feat) {
                 bestFeat = feat;
@@ -153,13 +165,13 @@ export function autoSelectFeats(build: CharacterBuild, slots: FeatSlot[], goalCl
                         }
                     }
                 }
-                if(bestFeat) break;
+                if (bestFeat) break;
             }
         }
 
         // 3. Fallback to role-based priorities
         if (!bestFeat) {
-            for(const featName of featPriorities[role] || []) {
+            for (const featName of featPriorities[role] || []) {
                 const feat = availableFeats.find(f => f.name.startsWith(featName));
                 if (feat) {
                     bestFeat = feat;
@@ -167,7 +179,7 @@ export function autoSelectFeats(build: CharacterBuild, slots: FeatSlot[], goalCl
                 }
             }
         }
-        
+
         // 4. Fallback to any available feat
         if (!bestFeat && availableFeats.length > 0) {
             bestFeat = availableFeats[0];

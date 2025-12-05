@@ -16,7 +16,7 @@ export const titan: BaselineMonster = {
     fullAttack: ["2 slams +29 melee (1d8+14)"],
     spaceReach: "15 ft./15 ft.",
     specialAttacks: [
-        { name: "Spell-Like Abilities", type: "Sp", description: "Caster Level 20th. At will—chain lightning, charm monster, cure critical wounds, fire storm, invisibility, levitate, persistent image." },
+        { name: "Spell-Like Abilities", type: "Sp", description: "Caster Level 20th. At will—chain lightning (Quickened), charm monster, cure critical wounds, fire storm, invisibility, levitate, persistent image." },
     ],
     specialQualities: [
         { name: "Damage Reduction", type: "Su", description: "15/lawful" },
@@ -31,4 +31,4 @@ export const titan: BaselineMonster = {
     levelAdjustment: "+7",
     advancement: "By character class",
     alignment: "Chaotic Neutral",
-  };
+};

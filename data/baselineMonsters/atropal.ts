@@ -17,7 +17,7 @@ export const atropal: BaselineMonster = {
     spaceReach: "10 ft./10 ft.",
     specialAttacks: [
         { name: "Aura of Death", type: "Su", description: "30-ft. radius, living creatures gain one negative level (Fort DC 24 negates)." },
-        { name: "Spell-Like Abilities", type: "Sp", description: "At will—animate dead, blasphemy, cone of cold, contagion, desecrate, greater dispel magic, horrid wilting, greater teleport, unholy aura." },
+        { name: "Spell-Like Abilities", type: "Sp", description: "At will—animate dead, cone of cold, contagion, desecrate, greater dispel magic, horrid wilting, greater teleport, unholy aura, wail of the banshee." },
         { name: "Summon Undead", type: "Sp", description: "1/day, can attempt to summon 1d3 Spectres or 1 Nightwalker with a 40% chance of success." },
     ],
     specialQualities: [
@@ -34,4 +34,4 @@ export const atropal: BaselineMonster = {
     levelAdjustment: "-",
     advancement: "By character class",
     alignment: "Neutral Evil",
-  };
+};

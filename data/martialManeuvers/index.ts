@@ -21,4 +21,8 @@ export const martialManeuvers: MartialManeuver[] = [
   ...stoneDragonManeuvers,
   ...tigerClawManeuvers,
   ...whiteRavenManeuvers,
-].sort((a, b) => a.name.localeCompare(b.name));
+].sort((a, b) => {
+  if (a.level !== b.level) return a.level - b.level;
+  if (a.discipline !== b.discipline) return a.discipline.localeCompare(b.discipline);
+  return a.name.localeCompare(b.name);
+});
