@@ -29,7 +29,7 @@ export const phane: BaselineMonster = {
     skills: [{ name: "Hide", bonus: 26 }, { name: "Listen", bonus: 26 }, { name: "Move Silently", bonus: 26 }, { name: "Spot", bonus: 26 }, { name: "Tumble", bonus: 26 }],
     feats: ["Dodge", "Mobility", "Spring Attack", "Improved Initiative", "Weapon Finesse"],
     environment: "Any",
-    challengeRating: 20,
+    challengeRating: 17,
     levelAdjustment: "-",
     advancement: "By character class",
     alignment: "Lawful Neutral",

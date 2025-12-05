@@ -31,7 +31,7 @@ export const kami: BaselineMonster = {
     skills: [{ name: "Concentration", bonus: 28 }, { name: "Diplomacy", bonus: 30 }, { name: "Knowledge (nature)", bonus: 27 }, { name: "Sense Motive", bonus: 27 }, { name: "Swim", bonus: 35 }],
     feats: ["Alertness", "Cleave", "Dodge", "Improved Natural Attack (Bite)", "Power Attack", "Weapon Focus (Bite)"],
     environment: "Any aquatic",
-    challengeRating: 20,
+    challengeRating: 17,
     levelAdjustment: "-",
     advancement: "By character class",
     alignment: "True Neutral",

@@ -36,7 +36,7 @@ export const upasundaAsura: BaselineMonster = {
   skills: [{ name: "Bluff", bonus: 19 }, { name: "Diplomacy", bonus: 21 }, { name: "Intimidate", bonus: 21 }, { name: "Knowledge (the planes)", bonus: 18 }, { name: "Sense Motive", bonus: 20 }],
   feats: ["Multiattack", "Improved Multiattack", "Power Attack", "Combat Reflexes"],
   environment: "Any evil-aligned plane",
-  challengeRating: 20,
+  challengeRating: 15,
   levelAdjustment: "+6",
   advancement: "By character class",
   alignment: "Lawful Evil",

@@ -35,7 +35,7 @@ export const adamantineGolem: BaselineMonster = {
   skills: [],
   feats: ["Power Attack", "Cleave", "Great Cleave", "Improved Sunder"],
   environment: "Any",
-  challengeRating: 20,
+  challengeRating: 17,
   levelAdjustment: "-",
   advancement: "19-36 HD (Huge)",
   alignment: "Unaligned",

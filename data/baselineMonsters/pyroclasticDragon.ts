@@ -31,7 +31,7 @@ export const pyroclasticDragon: BaselineMonster = {
     skills: [{ name: "Intimidate", bonus: 24 }, { name: "Jump", bonus: 32 }, { name: "Listen", bonus: 24 }, { name: "Spot", bonus: 24 }],
     feats: ["Power Attack", "Improved Bull Rush", "Shock Trooper", "Cleave", "Weapon Focus (Bite)"],
     environment: "Volcanic mountains",
-    challengeRating: 20,
+    challengeRating: 17,
     levelAdjustment: "+6",
     advancement: "By character class",
     alignment: "Chaotic Neutral",

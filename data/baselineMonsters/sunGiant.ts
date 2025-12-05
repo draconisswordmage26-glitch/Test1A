@@ -35,7 +35,7 @@ export const sunGiant: BaselineMonster = {
   skills: [{ name: "Climb", bonus: 22 }, { name: "Diplomacy", bonus: 22 }, { name: "Intimidate", bonus: 22 }, { name: "Jump", bonus: 22 }, { name: "Sense Motive", bonus: 21 }, { name: "Spot", bonus: 21 }],
   feats: ["Point Blank Shot", "Precise Shot", "Far Shot", "Improved Initiative", "Power Attack", "Cleave"],
   environment: "Warm mountains",
-  challengeRating: 20,
+  challengeRating: 14,
   levelAdjustment: "+4",
   advancement: "By character class",
   alignment: "Lawful Good",

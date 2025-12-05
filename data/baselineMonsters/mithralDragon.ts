@@ -30,7 +30,7 @@ export const mithralDragon: BaselineMonster = {
     skills: [{ name: "Concentration", bonus: 26 }, { name: "Diplomacy", bonus: 25 }, { name: "Knowledge (psionics)", bonus: 25 }, { name: "Listen", bonus: 27 }, { name: "Psychic Ken", bonus: 25 }, { name: "Sense Motive", bonus: 25 }, { name: "Spot", bonus: 27 }],
     feats: ["Multiattack", "Power Attack", "Improved Multiattack", "Psionic Meditation", "Weapon Focus (Bite)", "Alertness", "Flyby Attack"],
     environment: "Temperate mountains",
-    challengeRating: 20,
+    challengeRating: 17,
     levelAdjustment: "+7",
     advancement: "By character class",
     alignment: "Lawful Neutral",

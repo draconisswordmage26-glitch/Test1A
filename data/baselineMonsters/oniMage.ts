@@ -29,7 +29,7 @@ export const oniMage: BaselineMonster = {
     skills: [{ name: "Concentration", bonus: 28 }, { name: "Knowledge (religion)", bonus: 27 }, { name: "Knowledge (the planes)", bonus: 27 }],
     feats: ["Power Attack", "Combat Expertise", "Improved Initiative", "Iron Will", "Multiattack", "Cleave", "Great Cleave", "Toughness"],
     environment: "Any",
-    challengeRating: 20,
+    challengeRating: 17,
     levelAdjustment: "+7",
     advancement: "By character class",
     alignment: "Lawful Neutral",

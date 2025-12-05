@@ -31,7 +31,7 @@ export const wormThatWalks: BaselineMonster = {
     skills: [{ name: "Concentration", bonus: 32 }, { name: "Knowledge (arcana)", bonus: 30 }, { name: "Spellcraft", bonus: 30 }],
     feats: ["Combat Casting", "Spell Penetration", "Greater Spell Penetration", "Heighten Spell", "Maximize Spell", "Quicken Spell"],
     environment: "Any",
-    challengeRating: 20,
+    challengeRating: 17,
     levelAdjustment: "+5",
     advancement: "By character class",
     alignment: "Neutral Evil",

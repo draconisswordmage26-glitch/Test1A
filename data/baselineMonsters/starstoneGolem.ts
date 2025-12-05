@@ -31,7 +31,7 @@ export const starstoneGolem: BaselineMonster = {
     skills: [],
     feats: ["Power Attack", "Cleave", "Great Cleave", "Spell Focus (Evocation)", "Greater Spell Focus (Evocation)"],
     environment: "Any",
-    challengeRating: 20,
+    challengeRating: 16,
     levelAdjustment: "-",
     advancement: "By character class",
     alignment: "True Neutral",

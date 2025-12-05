@@ -31,7 +31,7 @@ export const adityanAgathion: BaselineMonster = {
     skills: [{ name: "Balance", bonus: 24 }, { name: "Intimidate", bonus: 22 }, { name: "Jump", bonus: 27 }, { name: "Tumble", bonus: 24 }],
     feats: ["Power Attack", "Cleave", "Improved Sunder", "Weapon Focus (Greatsword)"],
     environment: "Nirvana",
-    challengeRating: 20,
+    challengeRating: 16,
     levelAdjustment: "-",
     advancement: "By character class",
     alignment: "Neutral Good",

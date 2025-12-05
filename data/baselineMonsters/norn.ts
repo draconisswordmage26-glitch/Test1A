@@ -30,7 +30,7 @@ export const norn: BaselineMonster = {
     skills: [{ name: "Concentration", bonus: 26 }, { name: "Diplomacy", bonus: 28 }, { name: "Knowledge (any two)", bonus: 28 }, { name: "Sense Motive", bonus: 27 }, { name: "Spellcraft", bonus: 28 }],
     feats: ["Combat Casting", "Dodge", "Mobility", "Improved Initiative", "Quicken Spell-Like Ability (Divination)"],
     environment: "Any",
-    challengeRating: 20,
+    challengeRating: 17,
     levelAdjustment: "-",
     advancement: "By character class",
     alignment: "True Neutral",

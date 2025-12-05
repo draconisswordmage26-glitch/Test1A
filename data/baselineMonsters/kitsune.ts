@@ -31,7 +31,7 @@ export const kitsune: BaselineMonster = {
     skills: [{ name: "Bluff", bonus: 32 }, { name: "Diplomacy", bonus: 32 }, { name: "Disguise", bonus: 30 }, { name: "Perform", bonus: 30 }, { name: "Spellcraft", bonus: 28 }],
     feats: ["Spell Focus (Illusion)", "Spell Focus (Enchantment)", "Melodic Casting", "Weapon Finesse", "Multiattack", "Combat Casting", "Improved Initiative", "Heighten Spell", "Quicken Spell"],
     environment: "Temperate forests",
-    challengeRating: 20,
+    challengeRating: 18,
     levelAdjustment: "+6",
     advancement: "By character class",
     alignment: "Chaotic Good",

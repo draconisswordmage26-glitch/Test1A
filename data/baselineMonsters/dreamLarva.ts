@@ -31,7 +31,7 @@ export const dreamLarva: BaselineMonster = {
     skills: [{ name: "Concentration", bonus: 31 }, { name: "Knowledge (psionics)", bonus: 30 }, { name: "Psicraft", bonus: 30 }, { name: "Sense Motive", bonus: 30 }],
     feats: ["Psionic Body", "Greater Psionic Endowment", "Power Penetration", "Psionic Meditation", "Boost Construct", "Widen Power"],
     environment: "Any",
-    challengeRating: 20,
+    challengeRating: 18,
     levelAdjustment: "-",
     advancement: "By character class",
     alignment: "Chaotic Neutral",

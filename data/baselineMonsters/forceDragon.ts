@@ -29,7 +29,7 @@ export const forceDragon: BaselineMonster = {
     skills: [{ name: "Concentration", bonus: 28 }, { name: "Knowledge (psionics)", bonus: 27 }, { name: "Psicraft", bonus: 27 }, { name: "Sense Motive", bonus: 27 }],
     feats: ["Power Attack", "Cleave", "Multiattack", "Psionic Body", "Speed of Thought"],
     environment: "Any",
-    challengeRating: 20,
+    challengeRating: 17,
     levelAdjustment: "+6",
     advancement: "By character class",
     alignment: "Lawful Neutral",

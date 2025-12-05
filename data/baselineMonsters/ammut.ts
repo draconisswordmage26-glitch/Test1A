@@ -31,7 +31,7 @@ export const ammut: BaselineMonster = {
     skills: [{ name: "Concentration", bonus: 29 }, { name: "Knowledge (nature)", bonus: 25 }, { name: "Survival", bonus: 25 }],
     feats: ["Alertness", "Combat Reflexes", "Dodge", "Improved Initiative", "Lightning Reflexes", "Flyby Attack"],
     environment: "Any (sky)",
-    challengeRating: 20,
+    challengeRating: 17,
     levelAdjustment: "-",
     advancement: "By character class",
     alignment: "Chaotic Neutral",

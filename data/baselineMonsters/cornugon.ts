@@ -36,7 +36,7 @@ export const cornugon: BaselineMonster = {
   skills: [{ name: "Balance", bonus: 25 }, { name: "Intimidate", bonus: 24 }, { name: "Jump", bonus: 31 }],
   feats: ["Cleave", "Improved Initiative", "Iron Will", "Power Attack", "Weapon Focus (spiked chain)", "Exotic Weapon Proficiency (spiked chain)"],
   environment: "The Nine Hells",
-  challengeRating: 17,
+  challengeRating: 16,
   levelAdjustment: "+7",
   advancement: "By character class",
   alignment: "Lawful Evil",

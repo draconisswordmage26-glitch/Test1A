@@ -35,7 +35,7 @@ export const valkyrie: BaselineMonster = {
   skills: [{ name: "Diplomacy", bonus: 26 }, { name: "Handle Animal", bonus: 26 }, { name: "Intimidate", bonus: 26 }, { name: "Ride", bonus: 24 }, { name: "Sense Motive", bonus: 23 }],
   feats: ["Mounted Combat", "Ride-By Attack", "Spirited Charge", "Power Attack", "Improved Initiative"],
   environment: "Any",
-  challengeRating: 20,
+  challengeRating: 16,
   levelAdjustment: "+5",
   advancement: "By character class",
   alignment: "Neutral Good",

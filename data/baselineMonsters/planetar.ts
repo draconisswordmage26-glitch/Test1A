@@ -34,7 +34,7 @@ export const planetar: BaselineMonster = {
   skills: [{ name: "Concentration", bonus: 24 }, { name: "Diplomacy", bonus: 25 }, { name: "Knowledge (religion)", bonus: 24 }, { name: "Sense Motive", bonus: 25 }, { name: "Spellcraft", bonus: 24 }],
   feats: ["Cleave", "Power Attack", "Improved Initiative", "Iron Will"],
   environment: "Any good-aligned plane",
-  challengeRating: 17,
+  challengeRating: 16,
   levelAdjustment: "+8",
   advancement: "By character class",
   alignment: "Lawful Good",

@@ -28,7 +28,7 @@ export const rakshasaMaharaja: BaselineMonster = {
     skills: [{ name: "Bluff", bonus: 31 }, { name: "Diplomacy", bonus: 33 }, { name: "Disguise", bonus: 31 }, { name: "Knowledge (arcana)", bonus: 29 }],
     feats: ["Combat Expertise", "Dodge", "Improved Combat Casting", "Alertness", "Silent Spell", "Still Spell"],
     environment: "Any",
-    challengeRating: 20,
+    challengeRating: 17,
     levelAdjustment: "+7",
     advancement: "By character class",
     alignment: "Lawful Evil",

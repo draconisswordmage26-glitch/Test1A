@@ -31,7 +31,7 @@ export const aelder: BaselineMonster = {
     skills: [{ name: "Concentration", bonus: 32 }, { name: "Knowledge (psionics)", bonus: 31 }, { name: "Psicraft", bonus: 31 }],
     feats: ["Power Attack", "Cleave", "Psionic Body", "Power Penetration", "Psionic Meditation", "Boost Construct"],
     environment: "Any",
-    challengeRating: 20,
+    challengeRating: 17,
     levelAdjustment: "-",
     advancement: "By character class",
     alignment: "Chaotic Neutral",

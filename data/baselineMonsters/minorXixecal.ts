@@ -31,7 +31,7 @@ export const minorXixecal: BaselineMonster = {
     skills: [{ name: "Concentration", bonus: 31 }, { name: "Knowledge (nature)", bonus: 31 }, { name: "Knowledge (the planes)", bonus: 31 }, { name: "Listen", bonus: 30 }, { name: "Spot", bonus: 30 }, { name: "Survival", bonus: 30 }],
     feats: ["Power Attack", "Cleave", "Great Cleave", "Improved Sunder", "Awesome Blow", "Improved Bull Rush", "Alertness"],
     environment: "Cold deserts",
-    challengeRating: 20,
+    challengeRating: 17,
     levelAdjustment: "-",
     advancement: "By character class",
     alignment: "Chaotic Evil",

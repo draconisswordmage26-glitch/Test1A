@@ -30,7 +30,7 @@ export const behemoth: BaselineMonster = {
     skills: [{ name: "Intimidate", bonus: 24 }, { name: "Jump", bonus: 34 }, { name: "Listen", bonus: 22 }, { name: "Spot", bonus: 22 }],
     feats: ["Power Attack", "Cleave", "Great Cleave", "Awesome Blow", "Improved Bull Rush", "Improved Sunder", "Improved Critical (Bite)", "Improved Toughness"],
     environment: "Desolate plains, ruined cities",
-    challengeRating: 20,
+    challengeRating: 17,
     levelAdjustment: "-",
     advancement: "By character class",
     alignment: "Chaotic Neutral",

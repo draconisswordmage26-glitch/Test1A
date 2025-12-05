@@ -31,7 +31,7 @@ export const verdantPrince: BaselineMonster = {
     skills: [{ name: "Concentration", bonus: 29 }, { name: "Knowledge (nature)", bonus: 27 }, { name: "Listen", bonus: 27 }, { name: "Spot", bonus: 27 }, { name: "Survival", bonus: 27 }],
     feats: ["Power Attack", "Cleave", "Improved Initiative", "Great Fortitude", "Awesome Blow", "Improved Bull Rush"],
     environment: "Any forest",
-    challengeRating: 20,
+    challengeRating: 18,
     levelAdjustment: "-",
     advancement: "By character class",
     alignment: "Chaotic Neutral",
